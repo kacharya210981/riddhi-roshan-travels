@@ -7,6 +7,17 @@
     <title>Riddhi & Roshan Tours and Travels</title>
 
     <style>
+
+.info-section {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 25px;
+    text-align: center;
+}
+
+html {
+    scroll-behavior: smooth;
+}
         body {
             margin: 0;
             font-family: Arial, sans-serif;
@@ -141,6 +152,47 @@
     }
 }
 
+.navbar {
+    background: #ffffff;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 8px #cccccc;
+}
+
+.brand {
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #123c69;
+    margin: 0 12px;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 700px) {
+
+    .navbar {
+        display: block;
+        text-align: center;
+    }
+
+    .brand {
+        margin-bottom: 12px;
+    }
+
+    .menu a {
+        display: inline-block;
+        margin: 7px;
+    }
+}
     </style>
 </head>
 
@@ -160,12 +212,30 @@
 
 <body>
 
-    <div class="header">
+<div class="navbar">
+
+    <div class="brand">
+        Riddhi & Roshan Tours and Travels
+
+    </div>
+
+    <div class="menu">
+
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#enquiry">Enquiry</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+</div>
+
+    <div class="header" id="home">
         <h1>Riddhi & Roshan Tours and Travels</h1>
         <p>Your Journey, Our Responsibility</p>
     </div>
 
-    <div class="services">
+    <div class="services" id="services">
 
         <h2>Our Services</h2>
 
@@ -191,7 +261,7 @@
 
     </div>
 
-    <div class="enquiry-box">
+    <div class="enquiry-box" id="enquiry">
 
         <h2>Travel Enquiry</h2>
 
@@ -227,7 +297,41 @@
 
     </div>
 
-    <div class="footer">
+    <div id="about" class="info-section">
+
+    <h2>About Us</h2>
+
+    <p>
+        Welcome to Riddhi & Roshan Tours and Travels.
+        We assist our customers with Flight, Railway,
+        Bus and Holiday travel services.
+    </p>
+
+    <p>
+        Our aim is to provide simple, reliable and
+        convenient travel assistance to our customers.
+    </p>
+
+</div>
+
+
+<div id="contact" class="info-section">
+
+    <h2>Contact Us</h2>
+
+    <p>
+        📞 Mobile: 9967317329
+    </p>
+
+    <p>
+        💬 WhatsApp: 9967317329
+    </p>
+
+    <p>
+        ✉️ Email: riddhiandroshantravels@gmail.com
+    </p>
+
+</div>
         © 2026 Riddhi & Roshan Tours and Travels
     </div>
 
